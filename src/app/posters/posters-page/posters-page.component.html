@@ -1,0 +1,11 @@
+
+  <div *ngIf="isPostersLoadedData$| async; else loading" class="posters-page-container">
+    <div class="poster-card-container" *ngFor="let poster of posterData">
+        <app-poster-card [posterData]="poster"></app-poster-card>
+    </div>
+  </div>
+<ng-template #loading>loading...</ng-template>
+
+
+
+

@@ -1,0 +1,10 @@
+
+<div class="header-container">
+  <div class="header-shopping-cart">
+    <mat-icon>shopping_cart</mat-icon>
+    <div *ngIf="total > 0" >Amount to Pay: {{ total| currency }}</div>
+    <div *ngIf="total == 0">Amount to Pay: 0</div>
+  </div>
+  <div class="title">Galactic Poster Inventory</div>
+
+</div>

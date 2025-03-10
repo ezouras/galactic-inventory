@@ -1,0 +1,16 @@
+<mat-tab-group
+    class="reverse"
+    mat-stretch-tabs="false"
+    mat-align-tabs="start"
+  >
+    <div class="tabContainer">
+      <ng-container *ngFor="let posterLabel of posterTabLabels">
+        <mat-tab [label]="getPosterLabel(posterLabel)">
+          <app-posters-page
+            [dataType]="posterLabel"
+            >
+          </app-posters-page>
+        </mat-tab>
+      </ng-container>
+    </div>
+  </mat-tab-group>

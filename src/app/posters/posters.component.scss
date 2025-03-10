@@ -1,0 +1,9 @@
+
+@media only screen and (max-width: 375px) {
+  :host ::ng-deep .mat-mdc-tab-labels {
+    flex-direction: column !important;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+}

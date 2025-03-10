@@ -1,0 +1,12 @@
+<mat-card class="poster-card" appearance="outlined">
+  <div class="card-title">{{posterData.title}}</div>
+  <div class="card-subtitle">{{posterData.name}}</div>
+  <div class="card-stock-data">{{posterData.stock}} Available</div>
+  <div class="card-socialMedia">
+    <div class="button social-media-button">Like</div>
+    <div class="button social-media-button">SHARE</div>
+  </div>
+  <div class="card-footer">
+    <div class="button" (click)="addToCart()">Add To Cart</div>
+  </div>
+</mat-card>
